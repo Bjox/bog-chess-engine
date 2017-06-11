@@ -205,8 +205,8 @@ void play(unsigned int thread_count, unsigned int depth) {
 
 int main(int argc, char** argv)
 {
-	int thread_count = 8;
-	int depth = 3; // TODO: 5 = OK, 6 = HASSARD. must be a bug somewhere
+	int thread_count = 16;
+	int depth = 5; // TODO: 5 = OK, 6 = HASSARD. must be a bug somewhere
 
 
 	// first argument: number of threads
@@ -218,8 +218,9 @@ int main(int argc, char** argv)
 		depth = std::atoi(argv[2]);
 	}
 
-	//play(thread_count, depth);
-	test(thread_count, depth);
+	play(thread_count, depth);
+	//test(thread_count, depth);
+	//computergame(thread_count, depth);
 
 	system("pause");
 

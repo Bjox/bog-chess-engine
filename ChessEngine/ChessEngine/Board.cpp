@@ -1,6 +1,7 @@
 #include "Board.h"
 #include "Bitops.h"
 #include "MoveGenerator.h"
+#include <intrin.h>
 
 using namespace chessengine;
 
